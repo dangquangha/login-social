@@ -17,5 +17,10 @@
 
 .login-fb {
     background-color: #3b5998; 
+    color: #fff;
+}
+
+.login-linkedin {
+    background-color: #2F7BBA;
     color: #fff
 }

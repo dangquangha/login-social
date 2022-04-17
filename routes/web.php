@@ -20,6 +20,6 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 Auth::routes();
 
 Route::namespace('auth')->group(function () {
-    Route::get('social/{driver}', [SocialLogin::class, 'loginSocial'])->name('login.social');
-    Route::get('social/{driver}/callback', [SocialLogin::class, 'loginSocialCallback'])->name('login.social-callback');
+    Route::get('social/{driver}', [SocialLogin::class, 'redirect'])->name('login.social');
+    Route::get('social/{driver}/callback', [SocialLogin::class, 'callback'])->name('login.social-callback');
 });

@@ -31,6 +31,15 @@
                     </div>
 
                     <div class="row mb-3">
+                        <div class="col-md-6 offset-md-3">
+                            <a href="{{ route('login.social', 'linkedin') }}" class="btn form-control login-social login-linkedin">
+                                <img src="{{ asset('images/icon-linkedin.svg') }}" alt="">
+                                Login with Linkedin
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
                         <div class="col-md-6 offset-md-3 text-center">
                             <span class="text-muted">OR<span>
                         </div>

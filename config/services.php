@@ -42,4 +42,9 @@ return [
         'redirect' => env('FACEBOOK_APP_CALLBACK_URL'),
     ],
 
+    'linkedin' => [
+        'client_id' => env('LINKEDIN_APP_ID'),
+        'client_secret' => env('LINKEDIN_APP_SECRET'),
+        'redirect' => env('LINKEDIN_REDIRECT')
+    ],
 ];

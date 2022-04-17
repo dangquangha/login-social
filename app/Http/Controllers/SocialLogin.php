@@ -9,12 +9,12 @@ use Laravel\Socialite\Facades\Socialite;
 
 class SocialLogin extends Controller
 {
-    public function loginSocial($driver = 'google')
+    public function redirect($driver = 'google')
     {
         return Socialite::driver($driver)->redirect();
     }
 
-    public function loginSocialCallback(Request $request, $driver = 'google')
+    public function callback(Request $request, $driver = 'google')
     {
         $socialiteProfile = Socialite::driver($driver)->user();
         dd($socialiteProfile);
